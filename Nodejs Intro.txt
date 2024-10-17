@@ -1,0 +1,22 @@
+Node.js single thread dir ama non-block isleir.
+Node.js browserde isleyen javascripti alib libuv daxilinde isledilib enviromenti deisilib.
+
+Key Features of libuv:
+Event Loop: At its core, libuv is built around an event loop that dispatches I/O events asynchronously. This is what allows Node.js to handle a large number of connections without creating new threads for each one.
+
+Cross-Platform: It works across multiple operating systems (Linux, macOS, Windows, and others), abstracting the differences in their I/O systems.
+
+Non-Blocking I/O: libuv provides an abstraction layer for non-blocking I/O, enabling operations like reading from files, making network requests, or interacting with the file system to run asynchronously, without blocking the main thread.
+
+Thread Pool: For operations that cannot be non-blocking by nature (such as file system operations on some platforms), libuv uses a thread pool to execute them asynchronously.
+
+Timers and Event Handling: libuv also provides utility functions for handling timers, signals, child processes, etc., which are useful for implementing event-driven architectures.
+
+Yaratmaq
+
+npm init
+
+Run
+
+node index
+
